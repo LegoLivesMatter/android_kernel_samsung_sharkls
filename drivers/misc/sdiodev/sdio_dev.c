@@ -1187,7 +1187,8 @@ EXPORT_SYMBOL_GPL(get_apsdiohal_status);
 //return 1 means marlin sdiohal ready
 bool get_sdiohal_status(void)
 {
-	return marlin_sdio_ready.marlin_sdio_init_end_tag;
+	/*return marlin_sdio_ready.marlin_sdio_init_end_tag;*/
+	return 1;
 }
 EXPORT_SYMBOL_GPL(get_sdiohal_status);
 

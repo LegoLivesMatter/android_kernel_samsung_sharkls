@@ -1445,9 +1445,9 @@ static int ist30xx_probe(struct i2c_client *client,
 			0, data->pdata->max_y - 1, 0, 0);
 	input_set_abs_params(input_dev, ABS_MT_TOUCH_MAJOR,
 			0, data->pdata->max_w, 0, 0);
-#if IST30XX_JIG_MODE
+/*#if IST30XX_JIG_MODE
 	input_set_abs_params(input_dev, ABS_MT_PRESSURE, 0, 0, 0, 0);
-#endif
+#endif*/
 
 #if IST30XX_USE_KEY
 	{
